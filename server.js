@@ -1,11 +1,15 @@
 //Import thư viện cần thiết
 require('dotenv').config();
 const express = require('express');
+const cors = require('cors');
 const mongoose = require('mongoose');
 const app = express();
 
 
+
+
 //Cấu hình Express
+app.use(cors());
 app.use(express.json());
 
 
